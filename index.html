@@ -61,16 +61,18 @@
             margin: 8px 0;
         }
         
-     .buy-button {
-    display: inline-block;
+ .buy-button {
+    display: block;               /* ← Changed from inline-block to block */
     background: #F56400;
     color: white;
-    padding: 8px 20px;            /* ← Reduced height (8px top/bottom instead of 10px) */
-    border-radius: 24px;           /* ← Much more rectangular (4px instead of 24px) */
+    padding: 8px 40px;            /* ← Doubled horizontal padding (40px instead of 20px) */
+    border-radius: 4px;
     font-weight: 600;
-    font-size: 14px;              /* ← Added: Makes text slightly smaller */
+    font-size: 14px;
     margin-top: 12px;
     text-align: center;
+    width: 100%;                  /* ← NEW: Makes button span full width */
+    box-sizing: border-box;       /* ← NEW: Includes padding in width calculation */
 }
         
         .product-card:hover .buy-button {
