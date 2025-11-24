@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chernarus Country Code Sticker</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: transparent;
+        }
+        
+        .product-card {
+            max-width: 350px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            background: #f5f5f5;
+        }
+        
+        .product-info {
+            padding: 16px;
+        }
+        
+        .product-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 8px 0;
+            color: #222;
+        }
+        
+        .product-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: #FF6B35;
+            margin: 8px 0;
+        }
+        
+        .product-shop {
+            font-size: 14px;
+            color: #666;
+            margin: 8px 0;
+        }
+        
+        .buy-button {
+            display: inline-block;
+            background: #F56400;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 24px;
+            font-weight: 600;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        .product-card:hover .buy-button {
+            background: #E55300;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://icekvveenkiki.etsy.com/listing/4400142320/dayz-chernarus-flag-country-code-sticker" target="_blank" class="product-card">
+        <img src="https://i.etsystatic.com/25161212/r/il/ee2f64/7482697541/il_794xN.7482697541_6x3p.jpg" alt="Product Name" class="product-image">
+        <div class="product-info">
+            <h3 class="product-title">Your Product Name</h3>
+            <p class="product-shop">From Your Shop Name</p>
+            <div class="product-price">$XX.XX</div>
+            <div class="buy-button">View on Etsy</div>
+        </div>
+    </a>
+</body>
+</html>
