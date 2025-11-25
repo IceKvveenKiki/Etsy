@@ -12,34 +12,40 @@
             background: transparent;
         }
         
-        .product-card {
-            max-width: 350px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-decoration: none;
-            display: block;
-            color: inherit;
-        }
+ .product-card {
+    max-width: 700px;              /* ← DOUBLED width (350px → 700px) */
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    display: flex;                 /* ← NEW: Side-by-side layout */
+    flex-direction: row;           /* ← NEW: Horizontal arrangement */
+    color: inherit;
+}
         
         .product-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 4px 16px rgba(0,0,0,0.15);
         }
         
-        .product-image {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-            background: #f5f5f5;
-        }
+    .product-image {
+    width: 50%;                    /* ← NEW: Takes up half the card width */
+    height: 250px;                 /* ← REDUCED height (350px → 250px) */
+    object-fit: cover;
+    background: #f5f5f5;
+    flex-shrink: 0;                /* ← NEW: Prevents image from shrinking */
+}
         
-        .product-info {
-            padding: 16px;
-        }
+    .product-info {
+    padding: 20px;                 /* ← Increased padding for better spacing */
+    display: flex;                 /* ← NEW: Flexbox for vertical arrangement */
+    flex-direction: column;        /* ← NEW: Stack content vertically */
+    justify-content: center;       /* ← NEW: Center content vertically */
+    width: 50%;                    /* ← NEW: Takes up other half */
+}
         
         .product-title {
             font-size: 18px;
