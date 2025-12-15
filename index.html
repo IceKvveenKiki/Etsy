@@ -84,32 +84,3 @@
 </body>
 </html>
 ```
-
-## Summary of Changes:
-
-1. **Width:** `max-width: 700px` → `max-width: 450px` (matches social card)
-2. **Removed HTML:** 
-   - `<p class="product-shop">Kiki's Chernarus Country Code Decal</p>` line deleted
-   - `<div class="product-price">$XX.XX</div>` line deleted
-3. **Cleaned CSS:** I left the `.product-shop` and `.product-price` styles in the CSS (they won't affect anything since those elements don't exist), but if you want a completely clean file, you can also remove those style blocks.
-
-## Visual Result:
-
-**Before:**
-```
-┌─────────────────────────────────┐
-│ [Image] │ Product Name          │
-│         │ From Shop Name        │
-│         │ $XX.XX                │
-│         │ [View on Etsy]        │
-└─────────────────────────────────┘
-```
-
-**After:**
-```
-┌─────────────────────┐
-│ [Image] │ Product   │
-│         │ Name      │
-│         │           │
-│         │[View Etsy]│
-└─────────────────────┘
